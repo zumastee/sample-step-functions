@@ -1,29 +1,29 @@
-# AWS Step Functions サンプル
+# AWS Step Functions Sample
 
-AWS Step Functionsを使用したステートマシンのサンプルプロジェクトです。
+A sample project demonstrating AWS Step Functions state machines.
 
-## プロジェクト構造
+## Project Structure
 
 ```
 sample-step-functions/
 ├── statemachines/
-│   └── hello-world.asl.json    # Hello Worldステートマシン
+│   └── hello-world.asl.json    # Hello World state machine
 └── README.md
 ```
 
-## ステートマシンの説明
+## State Machine Description
 
-### Hello Worldステートマシン
+### Hello World State Machine
 
-シンプルなPassステートを使用したHello Worldの例です。
+A simple example using the Pass state to demonstrate basic Step Functions functionality.
 
-#### ステートマシンの構成
+#### State Machine Configuration
 
-- 開始状態: `Pass`
-- 終了状態: `Pass`
-- 出力: `{"result": "Hello"}`
+- Start State: `Pass`
+- End State: `Pass`
+- Output: `{"result": "Hello"}`
 
-#### 実行結果
+#### Execution Result
 
 ```json
 {
@@ -31,21 +31,21 @@ sample-step-functions/
 }
 ```
 
-## 使用方法
+## Usage
 
-1. AWS Step Functionsコンソールにアクセス
-2. ステートマシンの作成を選択
-3. `hello-world.asl.json`の内容をコピーして貼り付け
-4. ステートマシンを実行
+1. Access the AWS Step Functions console
+2. Select "Create state machine"
+3. Copy and paste the contents of `hello-world.asl.json`
+4. Execute the state machine
 
-## 開発環境のセットアップ
+## Development Environment Setup
 
-1. AWS CLIのインストール
-2. AWS認証情報の設定
-3. AWS Step Functionsのアクセス権限の確認
+1. Install AWS CLI
+2. Configure AWS credentials
+3. Verify AWS Step Functions access permissions
 
-## 注意事項
+## Notes
 
-- このサンプルは基本的なPassステートの使用例です
-- 実際のユースケースに応じて、より複雑なステートマシンを構築できます
-- コスト最適化のため、不要なステートマシンは削除することをお勧めします 
+- This sample demonstrates basic usage of the Pass state
+- You can build more complex state machines based on your actual use cases
+- It is recommended to delete unused state machines for cost optimization 
